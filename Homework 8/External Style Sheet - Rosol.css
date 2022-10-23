@@ -1,0 +1,50 @@
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blueviolet
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: larger;
+}
+
+.myclass{
+    font-size: x-large;
+    color:slateblue;
+    font-weight: lighter;
+}
+
+.Joeclass{
+    font-size: 40pt;
+    color:lime;
+    font-weight: 300;
+}
+
+.li{
+    font-size: medium;
+    color:gold;
+    font-style: normal;
+}
+
+.ol{
+    font-size: 21pt;
+    color:dodgerblue;
+    font-style: italic;
+}
+
+.body {
+    background-image: url(../Images/thewoods.jpg);
+}
+
+input[required]:placeholder-shown {
+border-color: var(--clr-primary);
+}
+
+input{
+    font-size: 1.5em;
+}
+
+:placeholder-shown {
+    background-color: red;
+}
