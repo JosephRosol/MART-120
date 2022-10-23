@@ -24,15 +24,15 @@
             {
                 window.alert("Email is Required");
             }
-            var yes;
-            yes = document.getElementsByTagName("yes").value;
-            if(yes == "")
+            var Yes;
+            Yes = document.getElementsById("yes").value;
+            if(Yes == "")
             {
                 window.alert("a checked box is required")
             }
-            var no;
-            no = document.getElementsByTagName("no").value;
-            if(no == "")
+            var No;
+            No = document.getElementsById("no").value;
+            if(No == "")
             {
                 window.alert("a checked box is required")
             }
@@ -41,16 +41,33 @@
 </head>
 <body>
     <h5>Contact Me</h5>
-    <form action="nextPage.html" type="POST">
-        First Name: <input type="text" id="fName"><br>
-        Last Name: <input type="text" id="lname"><br>
-        Email Address: <input type="text" id="Eaddress"><br>
+    <form>
+        <label for="fname">First Name</label>
+        <input
+        type="text"
+        id="fname"
+        placeholder="&nbsp;"
+        required />
+
+        <label for="lname">Last Name</label>
+        <input
+        type="text"
+        id="lname"
+        placeholder="&nbsp;"
+        required />
+
+        <label for="email">Your Email</label>
+        <input
+        type="email"
+        id="email"
+        placeholder="&nbsp;"
+        required />
         <button id="mySubmit" type="submit">Submit</button>
     </form>
     <h6>Accept Terms of Agreement?</h6>
-    <input type="checkbox" name="yes" value="yes">Yes<br>
-    <input type="checkbox" name="no" value="no">No<br>
-    <button id="mySubmit" type="submit">Submit</button>
+    <span class="Joeclass"><input type="radio" id="yes" >Yes</span>
+    <span class="Joeclass"><input type="radio" id="no" >No</span>
+    <button id="mySubmit" class="myclass" onclick="getInformation();" >Submit</button>
     <a class="myclass" href="Rosol-Webpage 1.html">Go to page 1</a>
     <a class="myclass" href="Rosol-Webpage 2.html">Go to page 2</a>
 </body>
