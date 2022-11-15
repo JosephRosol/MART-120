@@ -36,3 +36,15 @@ span {
 .body {
     background-image: url(../Images/thewoods.jpg);
 }
+
+input[required]:placeholder-shown {
+border-color: var(--clr-primary);
+}
+
+input{
+    font-size: 1.5em;
+}
+
+:placeholder-shown {
+    background-color: red;
+}
